@@ -8,12 +8,15 @@ export default function HomePage() {
       <Link href="/about">Przejdź do strony O nas</Link>
       <Counter> </Counter>
       <GreetingForm> </GreetingForm>
+      <CounterWithLog> </CounterWithLog>
+      <TimerToggle> </TimerToggle>
     </main>
   );
 }
 import Card from '@/components/Card';
 import Counter from '@/components/Counter';
 import GreetingForm from '@/components/GreetingForm';
+import CounterWithLog from '@/components/CounterWithLog';
 export function AboutPage() {
   return (
     <main style={{ padding: '2rem' }}>
