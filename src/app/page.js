@@ -30,7 +30,7 @@ export function HomePage1() {
       <h1>Witaj na naszej stronie głównej!</h1>
       <p>To jest pierwsza strona stworzona w Next.js z App Routerem.</p>
       <Link href="/about">Przejdź do strony O nas</Link>
-      <Counter />
+      <Counter > </Counter>
     </main>
   );
 }
@@ -45,8 +45,8 @@ export function HomePage2() {
       <h1>Witaj na naszej stronie głównej!</h1>
       <p>To jest pierwsza strona stworzona w Next.js z App Routerem.</p>
       <Link href="/about">Przejdź do strony O nas</Link>
-      <Counter />
-      <GreetingForm />
+      <Counter > </Counter>
+      <GreetingForm > </GreetingForm>
     </main>
   );
 }
