@@ -1,0 +1,26 @@
+async function getPosts() {
+  const res = await fetch('https://jsonplaceholder.typicode.com/posts?_limit=5');
+  if (!res.ok) {
+    throw new Error('Nie udało się pobrać danych');
+  }
+  return res.json();
+}
+
+export default async function PostsPage() {
+  const posts = await getPosts();
+
+  return (
+    <main style={{ padding: '2rem' }}>
+      <h1>Lista postów</h1>
+      <ul>
+        {posts.map((post) => (
+          <li key={post.id}>{post.title}</li>
+        ))}
+      </ul>
+    </main>
+  );
+}
+const res = await fetch('https://jsonplaceholder.typicode.com/posts?_limit=5', {
+  cache: 'no-store',
+});
+await new Promise((resolve) => setTimeout(resolve, 2000)); // 2 sekundy
